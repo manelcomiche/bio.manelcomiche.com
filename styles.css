@@ -9,8 +9,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background: linear-gradient(135deg, #f0f0f0, #d0d0d0);
+    overflow: hidden;
+    margin: 20px;
 }
 
 .container {
@@ -74,6 +75,8 @@ body {
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.3s ease;
     font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .link i {
@@ -83,6 +86,16 @@ body {
 .link:hover {
     background: #005bb5;
     transform: translateY(-3px);
+}
+
+.link.portfolio-link {
+    background: gold;
+    color: black; 
+    font-weight: bold;
+}
+
+.link.portfolio-link:hover {
+    background: #d4af37; 
 }
 
 /* Responsividad */
